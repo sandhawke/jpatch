@@ -1,0 +1,30 @@
+{
+  "name": "stringpatch",
+  "version": "0.0.1",
+  "description": "simple but fast diff/patch for strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap --cov test*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandhawke/stringpatch.git"
+  },
+  "keywords": [
+    "diff",
+    "patch"
+  ],
+  "author": "Sandro Hawke (http://hawke.org/sandro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandhawke/stringpatch/issues"
+  },
+  "homepage": "https://github.com/sandhawke/stringpatch#readme",
+  "dependencies": {
+    "fast-diff": "^1.2.0"
+  },
+  "devDependencies": {
+    "tap": "^12.1.0",
+    "tape": "^4.9.1"
+  }
+}
