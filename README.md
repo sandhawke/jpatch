@@ -1,5 +1,7 @@
 [![NPM version][npm-image]][npm-url]
 
+### Example
+
 ```js
 const stringpatch = require('stringpatch')
 
@@ -13,11 +15,15 @@ const made = stringpatch.apply(patch, s1)
 // made === s1
 ```
 
+### API
+
 stringpatch.make(old, new): compute an efficient patch from `old` to `new`
 
 stringpatch.apply(patch, old): re-compute `new` 
 
-Patch format is an array to be join('')d to make the result, after any
+### Patch Format
+
+Patch format is an array to be joined to make the result, after any
 subarrays are replaced by that slice() of the source text.
 
 This patch:
@@ -32,9 +38,9 @@ Means the result will be computed as:
 [source.slice(1,4), 'hello',  source.slice(10,12)].join('')
 ```
 
-All the hard work is done by [fast-diff](https://www.npmjs.com/package/fast-diff)
+### See Also
 
-## see also
+All the hard work is done by [fast-diff](https://www.npmjs.com/package/fast-diff)
 
 After I wrote this, I discovered [textdiff-create](https://www.npmjs.com/package/textdiff-create) which does approximately the same thing.
 
