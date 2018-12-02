@@ -1,5 +1,10 @@
 [![NPM version][npm-image]][npm-url]
 
+### Motivation
+
+A big string changes on the server, and we want to make the same
+change on the client, without retransmitting the whole string.
+
 ### Example
 
 ```js
