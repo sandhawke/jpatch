@@ -1,4 +1,4 @@
-const stringpatch = require('.')
+const jpatch = require('.')
 const test = require('tape')
 
 const strings = [
@@ -19,8 +19,8 @@ const strings = [
 for (let s1 of strings) {
   for (let s2 of strings) {
     test(`patch "${s1}" => "${s2}")`, t => {
-      const patch = stringpatch.make(s1, s2)
-      const made = stringpatch.apply(patch, s1)
+      const patch = jpatch.make(s1, s2)
+      const made = jpatch.apply(patch, s1)
       t.equal(s2, made)
       t.end()
     })
@@ -28,7 +28,7 @@ for (let s1 of strings) {
 }
 
 test('bad diff', t => {
-  const d = stringpatch.convert([[2]])
+  const d = jpatch.convert([[2]])
   t.deepEqual(d, [])
   t.end()
 })

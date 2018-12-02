@@ -8,23 +8,23 @@ change on the client, without retransmitting the whole string.
 ### Example
 
 ```js
-const stringpatch = require('stringpatch')
+const jpatch = require('jpatch')
 
 const s1 = 'sandro is having a bad idea'
 const s2 = 'sandro is having a good idea'
 
-const patch = stringpatch.make(s1, s2)
+const patch = jpatch.make(s1, s2)
 // => [ [ 0, 19 ], 'goo', [ 21, 27 ] ]
 
-const made = stringpatch.apply(patch, s1)
+const made = jpatch.apply(patch, s1)
 // made === s1
 ```
 
 ### API
 
-stringpatch.make(old, new): compute an efficient patch from `old` to `new`
+jpatch.make(old, new): compute an efficient patch from `old` to `new`
 
-stringpatch.apply(patch, old): re-compute `new` 
+jpatch.apply(patch, old): re-compute `new` 
 
 ### Patch Format
 
@@ -50,5 +50,5 @@ All the hard work is done by [fast-diff](https://www.npmjs.com/package/fast-diff
 After I wrote this, I discovered [textdiff-create](https://www.npmjs.com/package/textdiff-create) which does approximately the same thing.
 
 
-[npm-image]: https://img.shields.io/npm/v/stringpatch.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/stringpatch
+[npm-image]: https://img.shields.io/npm/v/jpatch.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/jpatch

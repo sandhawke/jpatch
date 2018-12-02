@@ -1,5 +1,5 @@
 {
-  "name": "stringpatch",
+  "name": "jpatch",
   "version": "0.0.1",
   "description": "simple but fast diff/patch for strings",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandhawke/stringpatch.git"
+    "url": "git+https://github.com/sandhawke/jpatch.git"
   },
   "keywords": [
     "diff",
@@ -17,9 +17,9 @@
   "author": "Sandro Hawke (http://hawke.org/sandro)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sandhawke/stringpatch/issues"
+    "url": "https://github.com/sandhawke/jpatch/issues"
   },
-  "homepage": "https://github.com/sandhawke/stringpatch#readme",
+  "homepage": "https://github.com/sandhawke/jpatch#readme",
   "dependencies": {
     "fast-diff": "^1.2.0"
   },
