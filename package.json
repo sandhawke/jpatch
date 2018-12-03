@@ -1,6 +1,6 @@
 {
   "name": "jpatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple but fast diff/patch for strings",
   "main": "index.js",
   "scripts": {
